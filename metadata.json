@@ -1,0 +1,8 @@
+{
+  "name": "TORKOM",
+  "description": "Premium streetwear apparel brand from Bashkortostan. Editorial design, brutalist minimalism.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
