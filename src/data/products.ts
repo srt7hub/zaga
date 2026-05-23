@@ -14,7 +14,7 @@ export const products: Product[] = [
   {
     id: 'h-1',
     name: 'ХУДИ BASHKORTOSTAN (БЕЛ.)',
-    price: 4500,
+    price: 4800,
     category: 'hoodie',
     colors: ['Black', 'Graphite'],
     images: [
@@ -26,7 +26,7 @@ export const products: Product[] = [
   {
     id: 'h-4',
     name: 'ХУДИ TATARSTAN (ЧЕРН.)',
-    price: 4500,
+    price: 4800,
     category: 'hoodie',
     colors: ['Washed Grey', 'Black'],
     images: [
@@ -38,7 +38,7 @@ export const products: Product[] = [
   {
     id: 'h-2',
     name: 'ХУДИ BASHKORTOSTAN (ЧЕРН.)',
-    price: 4500,
+    price: 4800,
     category: 'hoodie',
     colors: ['Black', 'Grey'],
     images: [
@@ -50,7 +50,7 @@ export const products: Product[] = [
   {
     id: 'h-3',
     name: 'ХУДИ BASHKORTOSTAN (ЗЕЛ.)',
-    price: 4500,
+    price: 4800,
     category: 'hoodie',
     colors: ['Washed Black'],
     images: [
@@ -62,7 +62,7 @@ export const products: Product[] = [
   {
     id: 't-1',
     name: 'ФУТБОЛКА БАШКОРТОСТАН (ЧЕРН.)',
-    price: 3500,
+    price: 2500,
     category: 'tshirt',
     colors: ['Black', 'White'],
     images: [
@@ -74,7 +74,7 @@ export const products: Product[] = [
   {
     id: 't-4',
     name: 'ЛОНГСЛИВ ТАТАР КЫЗЫ (БЕЛ.)',
-    price: 3200,
+    price: 2500,
     category: 'tshirt',
     colors: ['Washed Black'],
     images: [
@@ -86,7 +86,7 @@ export const products: Product[] = [
   {
     id: 't-2',
     name: 'ФУТБОЛКА БАШКОРТОСТАН (БЕЛ.)',
-    price: 2900,
+    price: 2500,
     category: 'tshirt',
     colors: ['Off-White', 'Black'],
     images: [
@@ -98,7 +98,7 @@ export const products: Product[] = [
   {
     id: 't-3',
     name: 'ЛОНГСЛИВ БАШКОРТ КЫЗЫ (ЧЕРН.)',
-    price: 3800,
+    price: 2500,
     category: 'tshirt',
     colors: ['Black'],
     images: [
@@ -110,7 +110,7 @@ export const products: Product[] = [
   {
     id: 't-5',
     name: 'ФУТБОЛКА BASHKORTOSTAN (ЧЕРН.)',
-    price: 3400,
+    price: 2500,
     category: 'tshirt',
     colors: ['White'],
     images: [
@@ -122,7 +122,7 @@ export const products: Product[] = [
   {
     id: 'b-1',
     name: 'ПАНАМА ТОРКОМ',
-    price: 2200,
+    price: 1500,
     category: 'beanie',
     colors: ['Black', 'Red'],
     images: [
@@ -134,7 +134,7 @@ export const products: Product[] = [
   {
     id: 'b-2',
     name: 'ШАПКА ТОРКОМ',
-    price: 2500,
+    price: 1500,
     category: 'beanie',
     colors: ['Graphite'],
     images: [

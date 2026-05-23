@@ -27,13 +27,14 @@ export default function Home() {
       <section className="relative h-[100dvh] min-h-[700px] w-full flex flex-col justify-center overflow-hidden bg-[#050505]">
         {/* Background Images & Cinematic Overlays */}
         <div className="absolute inset-0 z-0">
-          <motion.img 
-            initial={{ scale: 1.15, filter: 'brightness(0.3) contrast(1.2)' }}
-            animate={{ scale: 1, filter: 'brightness(0.5) contrast(1.15)' }}
-            transition={{ duration: 25, ease: "easeOut" }}
-            src="/zaga.jpg" 
-            alt="Torkom Hero campaign"
-            className="w-full h-full object-cover origin-center"
+          <video
+            src="/vi1.MP4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="w-full h-full object-cover"
+            style={{ filter: 'brightness(0.5) contrast(1.15)' }}
           />
           {/* Gradients for depth */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-[#0A0A0A]/40 to-[#0A0A0A] mix-blend-multiply opacity-90" />
@@ -76,7 +77,7 @@ export default function Home() {
              initial={{ opacity: 0, scale: 0.95 }}
              animate={{ opacity: 1, scale: 1 }}
              transition={{ duration: 1.5, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-             className="flex items-center gap-4 md:gap-6 mb-6 md:mb-10"
+             className="flex items-center gap-4 md:gap-6 mb-1"
           >
              <div className="h-[1px] w-8 md:w-16 bg-gradient-to-r from-transparent to-white/30" />
              <span className="text-red-600 font-bold text-[10px] md:text-xs tracking-[0.5em] md:tracking-[0.8em] uppercase whitespace-nowrap">ВЕСНА ЛЕТО 26</span>
@@ -84,28 +85,14 @@ export default function Home() {
           </motion.div>
 
           <div className="overflow-hidden flex flex-col items-center">
-            <motion.h1 
-              initial={{ y: "110%" }}
-              animate={{ y: 0 }}
+            <motion.img
+              src="/torkom2.1.png"
+              alt="ТӨРКӨМ"
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1.2, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="font-black leading-[0.85] tracking-tighter uppercase text-white mb-1 md:mb-2 drop-shadow-2xl"
-              style={{ fontSize: 'clamp(26px, 9vw, 70px)' }}
-            >
-              MADE IN
-            </motion.h1>
-          </div>
-          
-          <div className="overflow-hidden w-full flex justify-center pb-2 px-2">
-             <motion.h1
-              initial={{ y: "110%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 1.2, delay: 0.35, ease: [0.16, 1, 0.3, 1] }}
-              className="font-black leading-[0.85] tracking-tighter uppercase relative whitespace-nowrap"
-              style={{ fontSize: 'clamp(24px, 10vw, 130px)' }}
-            >
-              <span className="text-transparent absolute inset-0 blur-[2px] md:blur-[4px]" style={{ WebkitTextStroke: 'max(1px, 0.1vw) rgba(255,255,255,0.3)' }}>BASHKORTOSTAN</span>
-              <span className="text-transparent relative z-10" style={{ WebkitTextStroke: 'max(1px, 0.15vw) white' }}>BASHKORTOSTAN</span>
-            </motion.h1>
+              className="w-[70vw] sm:w-[50vw] md:w-[40vw] max-w-[560px] drop-shadow-2xl"
+            />
           </div>
         </div>
 
@@ -145,6 +132,22 @@ export default function Home() {
            </div>
         </motion.div>
       </section>
+
+      {/* MARQUEE */}
+      <div className="w-full overflow-hidden bg-red-600 py-3 border-y border-red-700">
+        <div className="flex whitespace-nowrap animate-marquee">
+          {Array.from({ length: 2 }).map((_, i) => (
+            <div key={i} className="flex items-center shrink-0">
+              {['MADE IN BASHKORTOSTAN', 'ВЕСНА ЛЕТО 26', 'ЛИМИТИРОВАННЫЙ ДРОП', 'УФА / РОССИЯ', 'STREETWEAR', 'НОВАЯ КОЛЛЕКЦИЯ', 'ТӨРКӨМ'].map((text, j) => (
+                <span key={j} className="flex items-center">
+                  <span className="text-white font-black text-[11px] md:text-[13px] tracking-[0.3em] uppercase px-6 md:px-10">{text}</span>
+                  <span className="text-white/50 text-[8px]">✦</span>
+                </span>
+              ))}
+            </div>
+          ))}
+        </div>
+      </div>
 
       {/* 2. HOODIES STRIP */}
       <section className="py-24 md:py-32 overflow-hidden border-b border-white/10">
@@ -203,7 +206,7 @@ export default function Home() {
             
             <div className="md:col-span-7 flex justify-center order-1 md:order-2">
               <video 
-                src="/vi.mp4" 
+                src="/vi2.mp4" 
                 autoPlay 
                 loop 
                 muted 
