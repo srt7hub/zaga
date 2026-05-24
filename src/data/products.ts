@@ -120,6 +120,18 @@ export const products: Product[] = [
     description: 'Базовая футболка с контрастным принтом.'
   },
   {
+    id: 'b-3',
+    name: 'КЕПКА ТОРКОМ',
+    price: 1300,
+    category: 'beanie',
+    colors: ['Black'],
+    images: [
+      '/kepka.jpg',
+      '/kepka.jpg'
+    ],
+    description: 'Классическая кепка с вышитым логотипом бренда. Универсальный аксессуар для повседневного образа.'
+  },
+  {
     id: 'b-1',
     name: 'ПАНАМА ТОРКОМ',
     price: 1500,
