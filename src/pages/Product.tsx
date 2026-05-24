@@ -82,7 +82,7 @@ export default function Product() {
   const needsSize = product?.category === 'hoodie' || product?.category === 'tshirt';
   const canOrder = !needsSize || !!selectedSize;
   const orderHref = product
-    ? `https://ig.me/m/_turkum_02?text=${encodeURIComponent(`Привет, ТӨРКӨМ! Хочу заказать ${product.name}${selectedSize ? `, размер ${selectedSize}` : ''}.`)}`
+    ? `https://t.me/a13144a?text=${encodeURIComponent(`Привет, ТӨРКӨМ! Хочу заказать ${product.name}${selectedSize ? `, размер ${selectedSize}` : ''}.`)}`
     : '#';
 
   if (!product) {
@@ -179,7 +179,7 @@ export default function Product() {
                       : 'bg-white text-black hover:bg-red-600 hover:text-white'
                   }`}
                 >
-                  {!canOrder ? 'ВЫБЕРИТЕ РАЗМЕР' : 'ЗАКАЗАТЬ В INSTAGRAM'}
+                  {!canOrder ? 'ВЫБЕРИТЕ РАЗМЕР' : 'ЗАКАЗАТЬ В TELEGRAM'}
                 </a>
 
                 <div className="h-[1px] w-full bg-white/10 mb-8" />
@@ -229,7 +229,7 @@ export default function Product() {
               : 'bg-white text-black active:bg-red-600 active:text-white'
           }`}
         >
-          {!canOrder ? 'ВЫБЕРИТЕ РАЗМЕР' : 'ЗАКАЗАТЬ В INSTAGRAM'}
+          {!canOrder ? 'ВЫБЕРИТЕ РАЗМЕР' : 'ЗАКАЗАТЬ В TELEGRAM'}
         </a>
       </div>
     </>
